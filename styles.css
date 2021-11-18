@@ -194,6 +194,11 @@ p:hover {
     }
 }
 
+.container {
+    display: block;
+    text-align: center;
+}
+
 .container-center {
     display: flex;
     flex-wrap: wrap;
@@ -278,4 +283,32 @@ hr {
     }
 }
 
+.label {
+    display: inline-flex;
+}
+
+.label-fat {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.input {
+    background-color: #162712;
+    color:#899F83;
+    border: solid 2px #899F83; 
+    border-radius: 5px;
+}
+
+.input:hover {
+    border-color:#899F83
+}
+
+.input::selection {
+    border-color:#899F83
+}
+
+.row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
