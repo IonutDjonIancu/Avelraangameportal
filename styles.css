@@ -1,0 +1,281 @@
+body {
+    background:
+        /* url(backgroundImage.jpg) */
+        top left / 200px 200px
+        no-repeat
+        #020C00
+        fixed;
+}
+
+h2 {
+    border-bottom: 
+        2px 
+        solid 
+        rgba(65, 80, 62, 0.5);
+    border-right:
+        2px
+        solid
+        rgba(65, 80, 62, 0.5);
+    color:
+        #162712;
+    width: 400px;
+}
+
+h2:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes pulse {
+    0% {
+        color: 
+            #162712
+    }
+    80% {
+        color:
+            #899F83
+    }
+    85% {
+        color: 
+            #162712
+    }
+    90% {
+        color:
+            #899F83
+    }
+    95% {
+        color: 
+            #162712
+    }
+    100% {
+        color:
+            #899F83;
+        border-radius: 5px;
+        box-shadow: 4px 4px 5px #899F83;
+    }
+}
+
+a {
+    color:#44553F;
+    margin: 0px 5px;
+}
+
+a:hover {
+    color:#826466;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+p {
+    margin: 2px;
+    color: #162712;
+}
+
+p:hover {
+    color: #899F83
+}
+
+.hovertext {
+    writing-mode: vertical-lr;
+    border-radius: 3px;
+    border-color: #162712;
+    border-style: solid;
+    height: 480px;
+    margin: 2px 10px;
+    opacity: 0.7;
+    transition: 400ms;
+    width: 280px;
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: auto;
+    padding-left: 240px;
+    transform:rotate(180deg);
+}
+
+.hovertext:hover {
+    animation-name: moveleft;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+    0% {
+        color: #162712;
+        right:0px;
+    }
+    70% {
+        color: #899F83
+    }
+    80% {
+        color: #162712
+    }
+    85% {
+        color: #899F83
+    }
+    90% {
+        color: #162712
+    }
+    100% {
+        color: #899F83;
+        right:60px;
+    }
+}
+
+.main-card {
+    border-radius: 3px;
+    height: auto;
+    margin: 2px 10px;
+    opacity: 0.7;
+    transition: 400ms;
+    width: 280px;
+    position: relative;
+}
+
+.main-card:hover {
+    border-radius: 10px;
+    margin: 20px 30px;
+    opacity: 1;
+    transform:scale(1.2);
+}
+
+.first-card {
+    border-radius: 5px;
+    border: 
+        2px 
+        solid
+        black; 
+    height: auto;
+    width: 120px;
+    position: absolute;
+}
+
+.small-card {
+    border-radius: 5px;
+    border: 
+        2px 
+        solid
+        black; 
+    height: auto;
+    transition: 400ms;
+    width: 120px;
+    position: absolute;
+}
+
+.small-card:hover {
+    animation-name: showme;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+}
+
+.c1 {
+    transform: translate(30px, 0px);
+}
+
+.c2 {
+    transform: translate(60px, 0px);
+}
+
+@keyframes showme {
+    0% {
+        position: relative;
+        left:30px;
+        bottom:0px;
+    }
+    100% {
+        position: relative;
+        left:90px;
+        bottom:20px;
+        box-shadow: 4px 4px 5px #899F83;
+    }
+}
+
+.container-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-left {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-left-nonaligned {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+hr {
+    border: 
+        1px
+        solid
+        #2A3726
+}
+
+.anima {
+    display: flex;
+}
+
+.p1 {
+    animation-name: pulse2;
+    animation-duration: 250ms;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+}
+.p2 {
+    animation-name: pulse2;
+    animation-duration: 250ms;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    animation-delay: 250ms;
+}
+.p3 {
+    animation-name: pulse2;
+    animation-duration: 250ms;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    animation-delay: 500ms;
+}
+.p4 {
+    animation-name: pulse2;
+    animation-duration: 250ms;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    animation-delay: 750ms;
+}
+
+@keyframes pulse2 {
+    0% {
+        color: 
+            #162712
+    }
+    80% {
+        color:
+            #899F83
+    }
+    85% {
+        color: 
+            #162712
+    }
+    90% {
+        color:
+            #899F83
+    }
+    95% {
+        color: 
+            #162712
+    }
+    100% {
+        color:
+            #899F83
+    }
+}
+
+
