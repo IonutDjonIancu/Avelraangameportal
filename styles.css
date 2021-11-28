@@ -1,10 +1,5 @@
 body {
-    background:
-        /* url(backgroundImage.jpg) */
-        top left / 200px 200px
-        no-repeat
-        #020C00
-        fixed;
+    background:#020C00
 }
 
 h2 {
@@ -226,6 +221,7 @@ hr {
 
 .anima {
     display: flex;
+    justify-content: center;
 }
 
 .p1 {
